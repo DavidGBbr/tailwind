@@ -6,43 +6,17 @@
     <title>Tailwind CSS</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <div class="p-6">
-      <h1 class="text-4xl border-t-2 border-b-2 py-4">Curriculum</h1>
+  <body class="m-8">
+    <style>
+      html {
+        --positivo: #2e0;
+      }
+    </style>
 
-      <div class="mt-4">
-        <h2 class="text-2xl mb-2">Habilidades</h2>
-        <ul class="flex gap-1 flex-col">
-          <li class="bg-gray-200 w-56 px-6 py-3 border-l-purple-500 border-l-4">
-            HTML
-          </li>
-          <li class="bg-gray-200 w-56 px-6 py-3 border-l-purple-500 border-l-4">
-            CSS
-          </li>
-          <li class="bg-gray-200 w-56 px-6 py-3 border-l-purple-500 border-l-4">
-            JavaScript
-          </li>
-        </ul>
-      </div>
-
-      <div class="mt-4">
-        <h2 class="text-2xl mb-2">Línguas</h2>
-        <ul class="flex flex-col">
-          <li class="bg-gray-200 w-56 pl-6 py-3 border-l-purple-500 border-l-4">
-            Português
-          </li>
-          <li
-            class="bg-gray-300 w-56 pl-4 py-3 border-l-purple-500 border-l-4 -mt-1 ml-2"
-          >
-            Inglês
-          </li>
-          <li
-            class="bg-gray-400 w-56 pl-2 py-3 border-l-purple-500 border-l-4 -mt-1 ml-4"
-          >
-            Espanhol
-          </li>
-        </ul>
-      </div>
-    </div>
+    <h1
+      class="text-[--positivo] h-[calc(50vh-100px)] shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)]"
+    >
+      Valores Arbitrários
+    </h1>
   </body>
 </html>
