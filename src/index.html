@@ -7,11 +7,37 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="m-8">
-    <div class="grid grid-cols-3 gap-4 *:bg-gray-300 *:p-4">
-      <div class="col-start-2">Item 1</div>
-      <div class="col-start-3 row-start-3">Item 2</div>
-      <div>Item 3</div>
-      <div>Item 4</div>
+    <div class="grid gap-8">
+      <header class="grid grid-cols-[1fr_auto]">
+        <a href="/">Nivacraft</a>
+        <ul class="grid grid-cols-2 gap-4">
+          <li>Bicicletas</li>
+          <li>Contato</li>
+        </ul>
+      </header>
+
+      <div class="grid grid-cols-3 gap-8">
+        <h1>Produtos de Alta Qualidade</h1>
+        <p class="col-span-2">
+          Produtos de alta precisão e qualidade, feitos sob medida para você.
+          Explore o mundo na sua velocidade com o Nivacraft
+        </p>
+      </div>
+
+      <section class="grid grid-cols-3 gap-8">
+        <div class="grid gap-2">
+          <img src="./img/notebook.jpg" alt="Notebook" />
+          <label for="Notebook">Notebook R$2.000</label>
+        </div>
+        <div class="grid gap-2">
+          <img src="./img/camera.jpg" alt="Câmera" />
+          <label for="Câmera">Câmera R$1.500</label>
+        </div>
+        <div class="grid gap-2">
+          <img src="./img/tablet.jpg" alt="Tablet" />
+          <label for="Tablet">Tablet R$1.200</label>
+        </div>
+      </section>
     </div>
   </body>
 </html>
