@@ -554,57 +554,16 @@ video {
   display: none;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-.sticky {
-  position: sticky;
-}
-
-.inset-0 {
-  inset: 0px;
-}
-
-.-right-8 {
-  right: -2rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
-.z-50 {
-  z-index: 50;
+.-m-8 {
+  margin: -2rem;
 }
 
 .m-8 {
   margin: 2rem;
 }
 
-.-m-8 {
-  margin: -2rem;
-}
-
 .flex {
   display: flex;
-}
-
-.size-40 {
-  width: 10rem;
-  height: 10rem;
 }
 
 .size-12 {
@@ -612,69 +571,49 @@ video {
   height: 3rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.justify-between {
-  justify-content: space-between;
+.flex-row {
+  flex-direction: row;
 }
 
 .gap-4 {
   gap: 1rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
 
-.border-4 {
-  border-width: 4px;
+.border-2 {
+  border-width: 2px;
 }
 
-.border-lime-950 {
+.border-lime-800 {
   --tw-border-opacity: 1;
-  border-color: rgb(26 46 5 / var(--tw-border-opacity, 1));
+  border-color: rgb(63 98 18 / var(--tw-border-opacity, 1));
+}
+
+.border-lime-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(77 124 15 / var(--tw-border-opacity, 1));
+}
+
+.border-blue-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity, 1));
+}
+
+.border-orange-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(194 65 12 / var(--tw-border-opacity, 1));
+}
+
+.border-red-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
 }
 
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
-.bg-lime-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 242 100 / var(--tw-bg-opacity, 1));
-}
-
-.bg-lime-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 46 5 / var(--tw-bg-opacity, 1));
-}
-
-.bg-neutral-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
 }
 
 .bg-green-700 {
@@ -682,21 +621,53 @@ video {
   background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[color\(display-p3_1_0_\.9_0\)\] {
-  background-color: color(display-p3 1 0 .9 0);
+.bg-neutral-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
 }
 
 .bg-red-500\/50 {
   background-color: rgb(239 68 68 / 0.5);
 }
 
-.p-4 {
-  padding: 1rem;
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
 }
 
-.text-neutral-600 {
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 249 157 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 237 213 / var(--tw-bg-opacity, 1));
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text-\[rgb\(10_10_200\)\] {
   --tw-text-opacity: 1;
-  color: rgb(82 82 82 / var(--tw-text-opacity, 1));
+  color: rgb(10 10 200 / var(--tw-text-opacity, 1));
 }
 
 .text-neutral-100 {
@@ -704,9 +675,29 @@ video {
   color: rgb(245 245 245 / var(--tw-text-opacity, 1));
 }
 
-.text-\[rgb\(10_10_200\)\] {
+.text-neutral-600 {
   --tw-text-opacity: 1;
-  color: rgb(10 10 200 / var(--tw-text-opacity, 1));
+  color: rgb(82 82 82 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-700 {
+  --tw-text-opacity: 1;
+  color: rgb(77 124 15 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-700 {
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity, 1));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -715,4 +706,8 @@ video {
 
 .decoration-lime-400 {
   text-decoration-color: #a3e635;
+}
+
+.\*\:font-bold > * {
+  font-weight: 700;
 }
