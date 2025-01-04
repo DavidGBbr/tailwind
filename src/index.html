@@ -7,65 +7,71 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="m-8">
-    <div
-      class="rounded-md max-w-md p-4 bg-neutral-200 hover:bg-neutral-800 group"
-    >
-      <h1
-        class="text-xl font-serif font-bold mb-2 text-neutral-500 group-hover:text-neutral-200"
-      >
-        Aurora Boreal
-      </h1>
-      <p class="text-neutral-700 group-hover:text-neutral-300">
-        Melhor período para observação da Aurora Boreal, o céu estará iluminado
-        pelas estrelas.
-      </p>
-    </div>
+    <div class="grid gap-4 mt-8 max-w-lg mx-auto">
+      <h2 class="font-bold uppercase tracking-wide">Escolha a sua</h2>
 
-    <form action="">
       <div>
         <input
-          type="text"
-          class="border-2 border-gray-200 peer p-2"
-          placeholder="cpf"
+          type="radio"
+          name="produto"
+          value="nimbus"
+          id="nimbus"
+          class="peer mr-1"
         />
-        <p class="invisible peer-focus:visible text-yellow-700 mb-2">
-          Use pontos e hífen
-        </p>
+        <label
+          for="nimbus"
+          class="inline-grid grid-cols-[200px_auto] bg-slate-200 peer-checked:bg-slate-400 hover:bg-slate-300 cursor-pointer p-2 rounded-md mb-2"
+          >Nimbus Stark <span>R$ 4999</span></label
+        >
+        <ul class="bg-slate-200 rounded-md p-2 ml-5 hidden peer-checked:block">
+          <li>Motor Elétrico</li>
+          <li>Fibra de Carbono</li>
+          <li>50 km/h</li>
+          <li>Rastreador</li>
+        </ul>
       </div>
-      <div>
-        <input type="email" class="border-2 border-gray-200 peer p-2" />
-        <p class="invisible peer-invalid:visible text-red-800">
-          Email inválido.
-        </p>
-      </div>
-      <div>
-        <label for="seguros" class="flex gap-2 peer">
-          <input id="seguros" name="seguros" type="checkbox" />
-          Seguros
-        </label>
-        <p class="invisible peer-has-[:checked]:visible mb-2">
-          Você estará segurado até 24/12/2049
-        </p>
-      </div>
-      <button class="border-2 border-gray-200 rounded-md p-2">Enviar</button>
 
-      <div class="flex gap-8 mb-4 p-4">
-        <div
-          class="has-[.recomendado]:bg-gray-800 bg-gray-400 p-4 rounded-md size-40 relative"
+      <div>
+        <input
+          type="radio"
+          name="produto"
+          value="magic"
+          id="magic"
+          class="peer mr-1"
+        />
+        <label
+          for="magic"
+          class="inline-grid grid-cols-[200px_auto] bg-slate-200 peer-checked:bg-slate-400 hover:bg-slate-300 cursor-pointer p-2 rounded-md mb-2"
+          >Magic Might <span>R$ 2499</span></label
         >
-          <h2 class="text-white">Plano Ouro</h2>
-          <div
-            class="recomendado absolute bg-green-500 text-green-950 p-1 rounded-md -top-4 -right-4"
-          >
-            Recomendado
-          </div>
-        </div>
-        <div
-          class="has-[.recomendado]:bg-gray-800 bg-gray-400 p-4 rounded-md size-40 relative"
-        >
-          <h2 class="text-white">Plano Prata</h2>
-        </div>
+        <ul class="bg-slate-200 rounded-md p-2 ml-5 hidden peer-checked:block">
+          <li>Motor Elétrico</li>
+          <li>Fibra de Carbono</li>
+          <li>45 km/h</li>
+          <li>Rastreador</li>
+        </ul>
       </div>
-    </form>
+
+      <div>
+        <input
+          type="radio"
+          name="produto"
+          value="nebula"
+          id="nebula"
+          class="peer mr-1"
+        />
+        <label
+          for="nebula"
+          class="inline-grid grid-cols-[200px_auto] bg-slate-200 peer-checked:bg-slate-400 hover:bg-slate-300 cursor-pointer p-2 rounded-md mb-2"
+          >Nebula Cosmic <span>R$ 3999</span></label
+        >
+        <ul class="bg-slate-200 rounded-md p-2 ml-5 hidden peer-checked:block">
+          <li>Motor Elétrico</li>
+          <li>Fibra de Carbono</li>
+          <li>40 km/h</li>
+          <li>Rastreador</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
