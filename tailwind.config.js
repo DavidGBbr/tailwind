@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    colors: ({ colors }) => ({
+      lime: colors.lime,
+      white: "white",
+    }),
     extend: {
       fontFamily: {
         sans: ['"DM Sans"', "system-ui"],
@@ -30,6 +34,15 @@ module.exports = {
       },
       screens: {
         xs: "380px",
+      },
+      keyframes: {
+        slideIn: {
+          "0%": { opacity: 0, transform: "translateX(-20%)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        slideIn: "slideIn .3s ease-in-out forwards",
       },
     },
   },
